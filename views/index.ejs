@@ -9,10 +9,7 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row-fluid">
-				<div class="span2">
-					some stuff
-				</div>
-				<div class="span10">
+				<div class="span8 offset2">
 					<div class="navbar">
 						<div class="navbar-inner">
 							<div class="container">
@@ -30,14 +27,34 @@
 												<li><a href="#">Open Project</a></li>
 											</ul>
 										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nodes</a>
+											<ul class="dropdown-menu">
+												<li><a href="#newnode" id="#new-node">New Node</a></li>
+												<li><a href="#">Edit Nodes</a></li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Edges</a>
+											<ul class="dropdown-menu">
+												<li><a href="#newedge" id="#new-edge">New Edge</a></li>
+												<li><a href="#">Edit Edges</a></li>
+											</ul>
+										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div id="vis-canvas">
-						
+					<div class="span12 sigma-parent" id="vis-canvas-parent">
+						<div class="sigma-expand" id="vis-canvas">
+						</div>
 					</div>
+					
+					<div id="dialog">
+						<p>doing a thing</p>
+					</div>
+					
 				</div>
 			</div>
 		</div>

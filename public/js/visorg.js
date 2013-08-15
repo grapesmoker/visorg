@@ -1,15 +1,18 @@
-/**
- * New node file
- */
-
-window.VisOrg = Ember.Application.create();
-
-VisOrg.Router.map(function() {
-	this.resource('visorg', {path: '/'});
-});
-
-VisOrg.NodeRoute = Ember.Route.extend({
-	model: function() {
-		return VisOrg.Node.find();
+define([
+    'jquery',
+    'underscore',
+    'backbone',
+    'bootstrap',
+    'router'], 
+    
+    function($, _, Backbone, Bootstrap, Router) {
+		console.log('initialized');
+		var initialize = function () {
+			Router.initialize();
+		};
+		
+		return {
+			initialize: initialize
+		};
 	}
-});
+);
